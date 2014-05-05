@@ -1,0 +1,22 @@
+{
+  "name": "Memo",
+  "description": "Memo application",
+  "launch_path": "/index.html",
+  "icons": {
+    "32": "/image/icon_32.png",
+    "48": "/image/icon_48.png",
+    "64": "/image/icon_64.png",
+    "128": "/image/icon_128.png"
+  },
+  "developer": {
+    "name": "yasuos.com",
+    "url": "http://yasuos.com/blog"
+  },
+  "default_locale": "en",
+  "locales": {
+    "ja": {
+      "name" : "メモ帳",
+      "description" : "メモ帳アプリ"
+    }
+  }
+}
