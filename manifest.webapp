@@ -1,6 +1,6 @@
 {
   "name": "Memo",
-  "description": "Memo application",
+  "description": "Simple Memo application",
   "launch_path": "/index.html",
   "icons": {
     "32": "/image/icon_32.png",
@@ -16,7 +16,7 @@
   "locales": {
     "ja": {
       "name" : "メモ帳",
-      "description" : "メモ帳アプリ"
+      "description" : "シンプルなメモ帳アプリ"
     }
   }
 }

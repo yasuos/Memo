@@ -3,16 +3,26 @@
 	"use strict";
 
 	// メモ画面を隠す
-	$("#view-edit").hide();
+	//$("#view-edit").hide();
 
 	function showViewList() {
-		viewList.$el.show();
-		viewEdit.$el.hide( "fast" );
+		//viewList.$el.show();
+		//viewEdit.$el.hide();
+		viewList.$el.removeClass( "left" );
+		viewList.$el.addClass( "current" );
+
+		viewEdit.$el.removeClass( "current" );
+		viewEdit.$el.addClass( "right" );
 	}
 	
 	function showViewEdit() {
-		viewList.$el.hide();
-		viewEdit.$el.show();
+		//viewList.$el.hide();
+		//viewEdit.$el.show();
+		viewList.$el.removeClass( "current" );
+		viewList.$el.addClass( "left" );
+
+		viewEdit.$el.removeClass( "right" );
+		viewEdit.$el.addClass( "current" );
 	}
 
 	// メモのモデル
@@ -141,7 +151,7 @@
 			}
 			
 			elem = "<a href='#'><p>" + str + "</p>";
-			elem += "<p style='font-size:1.0rem; color:#dddddd'>"
+			elem += "<p style='font-size:1.2rem; color:#999999'>"
 				 + obj.get( "updateDate" ).toLocaleDateString()
 				 + " "
 				 + obj.get( "updateDate" ).toLocaleTimeString()
@@ -161,7 +171,7 @@
 			}
 			
 			elem = "<a href='#'><p>" + str + "</p>";
-			elem += "<p style='font-size:1.0rem; color:#CCCCCC'>" + obj.get( "updateDate" ).toLocaleDateString() + "</p></a>";
+			elem += "<p style='font-size:1.2rem; color:#999999'>" + obj.get( "updateDate" ).toLocaleDateString() + "</p></a>";
 			this.$( "#view-list-memo-item" )[i].innerHTML = elem;
 		},
 		
