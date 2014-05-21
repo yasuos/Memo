@@ -17,6 +17,11 @@
     "ja": {
       "name" : "メモ帳",
       "description" : "シンプルなメモ帳アプリ"
+    },
+    "es": {
+      "name" : "bloc",
+      "description" : "Aplicación Bloc de notas sencillo"
     }
+    
   }
 }
