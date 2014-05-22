@@ -1,11 +1,15 @@
 {
   "name": "Memo",
+  "version": "1.1",
   "description": "Simple Memo application",
   "launch_path": "/index.html",
   "icons": {
     "32": "/image/icon_32.png",
     "48": "/image/icon_48.png",
+    "60": "/image/icon_60.png",
     "64": "/image/icon_64.png",
+    "90": "/image/icon_90.png"
+    "120": "/image/icon_120.png"
     "128": "/image/icon_128.png"
   },
   "developer": {
